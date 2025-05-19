@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(214, 17%, 92%);
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.main-container{
+    padding:  5% 2%;
+    
+}
+.first{
+    background-color: rgb(94, 11, 139);
+    color: rgb(255, 255, 255);
+    position: relative;
+    z-index: 0;
+}
+.second{
+    background-color: grey;
+    color: white;
+}
+.thrid{
+    background-color: white;
+    color: rgb(33, 32, 32);
+}
+.fourth{
+    background-color: rgb(46, 44, 44);
+    color: white;
+}
+.fifth{
+    background-color: white;
+    color: rgb(33, 32, 32);
+}
+.new{
+    margin-bottom:40px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 1px rgb(0, 0, 0);
+    font-size: 13px;
+}
+.header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 2;
+
+    
+}
+
+.headertxt{
+    display: flex;
+    flex-direction: column;
+
+    
+}
+
+.header img{
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 2px solid purple;
+}
+.header,.new h4 {
+    margin-bottom: 20px;
+    z-index: 2;
+    position: relative;
+}
+.new h4{
+    font-size: 1.4em;
+    font-weight: 600;
+    
+}
+.new p{
+    opacity: 70%;
+}
+.header .name{
+    opacity: 100%;
+}
+#quete{
+    position: absolute;
+    right: 10%;
+    top: 5%;
+    z-index:1;
+    opacity: 70%;
+}
+
+@media (min-width:576px){
+    .main-container{
+        display: flex;
+        max-width: 900px;
+        margin: 0 auto;/*auto they aling centre*/
+        max-width: 1440px;
+    }
+    .left{
+        
+        flex-basis: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+    .top{
+        margin-bottom: 20px;
+    }
+    .right{
+        flex-basis: 20%;
+    }
+    .fifth{
+        margin-bottom: 0;
+        height: 100%;
+    }
+    .top,.bottom{ 
+        flex-basis: 50%;
+        display: flex;
+        flex-direction: row;
+    }
+    .fourth,.first,.second,.thrid{
+        margin-right: 20px;
+        height: 100%;
+    }
+    .thrid,.second{
+        flex-basis: 35%;
+    }
+    .first,.fourth{
+        flex-basis: 65%;
+        flex-basis: 65%;
+    }
+}
